@@ -13,9 +13,11 @@
     <style>
       .section1-1 {
         margin-left: 100px;
+        margin-top: 40px;
       }
       .section1-2 {
         margin-right: 90px;
+        margin-top: 20px;
       }
       .ilustration-1 {
         height: 400px;
@@ -25,6 +27,9 @@
       }
       .section-bg-custom {
         background-color: #e4efff;
+      }
+      .section-bg-custom1 {
+        background-color: #153448;
       }
       .nav-tabs {
         --bs-nav-tabs-border-color: #fff;
@@ -121,7 +126,7 @@
 </head>
 <body>
 <header class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg fixed-top section-bg-custom1" data-bs-theme="dark">
           <div class="container-fluid">
             <a class="navbar-brand" href="https://www.jne.co.id/" target="blank">
               <img src="images/box2-fill.svg" alt="Logo Package" width="40px" class="d-inline-block align-text-top">
@@ -138,24 +143,24 @@
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#Shop">Shop</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
-                    Dropdown
+                    Other info
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#About Us">About Us</a></li>
+                    <li><a class="dropdown-item" href="#Our Director">Our Director</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#5 Tips from Our Site">5 Tips from Our Site</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  <a class="nav-link" href="#Contact & Social Media">Contact & Social Media</a>
                 </li>
               </ul>
               <form class="d-flex" role="search">
@@ -168,12 +173,12 @@
 </header>
     <main class="container-fluid" style="margin-top: 67,6px;">
       <section class="row bg-primary text-white py-5">
-        <div class="col-sm-6 order-md-last">
+        <div class="col-sm-6 order-md-last" data-aos="zoom-out-right">
           <div class="section1-2">
             <img src="images/house_illustrations.svg" alt="ilustration-1" class="ilustration-1">
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6" data-aos="zoom-out-right">
           <div class="section1-1">
             <h1 class="mb-4">Profile & Prestasiku dalam Jasa Pengiriman</h1>
             <p>Saya merupakan Jasa pengiriman barang dalam suatu bentuk pelayanan publik yang menawarkan kemudahan dalam proses mengirim suatu barang dari satu kota ke kota lainnya dengan aman dan dapat dipertanggung jawabkan oleh pihak jasa tersebut. </p>
@@ -184,13 +189,13 @@
       <section class="row py-5">
         <div class="col text-center">
           <strong>Problem & Solving </strong>
-          <h1>Insert yout Qustion in here</h1>
+          <h1>Insert your Question in Here!!</h1>
           <div class="lead mb-4">Berikan pertanyaanmu disini dan kelulah masalah, kami akan jawab dipesan jika anda sudah membuat pengiriman package</div>
           <div class="row justify-content-center">
             <div class="col-sm-5">
               <div class="row">
                 <div class="col-sm-9 mb-3">
-                  <input type="text" class="form-control" placeholder="Question and problem">
+                  <input type="text" class="form-control" placeholder="Type your Question or problem">
                 </div>
                 <div class="col-sm-3 mb-3">
                   <button class="btn btn-warning">GO SEND!</button>
@@ -204,7 +209,7 @@
           </h4>
         </div>
       </section>
-      <section class="row section-bg-custom py-5">
+      <section class="row section-bg-custom py-5" id="Shop">
         <div class="col text-center">
           <h1>Category For Your Package</h1>
           <div class="row justify-content-center">
@@ -437,7 +442,7 @@
                       <div class="p-2">
                         <i class="bi-check-circle-fill" style="color: #e20000;"></i>
                       </div>
-                      <div class="p-2">Rekeninng Bersama</div>
+                      <div class="p-2">Rekening Bersama</div>
                     </div>
                     <div class="p-2">
                       <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
@@ -455,7 +460,7 @@
           </div>
         </div>
       </section>
-      <section class="row section-bg-custom justify-content-center py-5">
+      <section class="row section-bg-custom justify-content-center py-5" id="About Us">
         <div class="col-sm-8">
           <div class="card bg-primary text-light">
             <div class="card-body">
@@ -478,7 +483,7 @@
         <div class="col-sm-8">
           <div class="row">
             <div class="col-sm-6 text-center" data-aos="fade-right">
-              <img src="images/youtube_illustration.svg" alt="ilustration-3" class="ilustration-3">
+              <img src="images/Komitmen dan layanan.jpg" alt="ilustration-3" class="ilustration-3">
             </div>
             <div class="col sm-6 section5-1">
               <h5 class="text-muted">Why Package Drive?</h5>
@@ -488,7 +493,7 @@
           </div>
           <div class="row my-5">
             <div class="col-sm-6 text-center order-md-last" data-aos="fade-left">
-              <img src="images/catp_computer_illustration.svg" alt="ilustration-4" class="ilustration-3">
+              <img src="images/fleksibilitas pengiriman.jpg" alt="ilustration-4" class="ilustration-3">
             </div>
             <div class="col-sm-6 section5-1">
               <h5 class="text-muted">Why Package Drive?</h5>
@@ -498,7 +503,7 @@
           </div>
           <div class="row">
             <div class="col-sm-6 text-center" data-aos="fade-right">
-              <img src="images/monitor.svg" alt="ilustration-5" class="ilustartion-3">
+              <img src="images/logistik 3.png" alt="ilustration-5" class="ilustartion-3">
             </div>
             <div class="col-sm-6 section5-1">
               <h5 class="text-muted">Why Package Drive?</h5>
@@ -508,7 +513,7 @@
           </div>
         </div>
       </section>
-      <section class="row justify-content-center py-5">
+      <section class="row justify-content-center py-5" id="Our Director">
         <div class="col-sm-8">
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
@@ -518,7 +523,7 @@
                   <div class="quote mb-5">
                     "Layanan berkualitas yang dijanjikan, Paket anda di tangan kami yang aman, Setia melayani!!"
                   </div>
-                  <button class="btn btn-lg btn-warning text-primary">Button Quote</button>
+                  <button class="btn btn-lg btn-warning text-primary">Quotes</button>
                 </div>
                 <div class="col-sm-4">
                   <img src="images/Screenshot 2024-04-20 133140.png" alt="" class="img-fluid">
@@ -534,7 +539,7 @@
                   <div class="quote mb-5">
                     "Menyampaikan kebahagiaan, standar diatas roda, Jatuh cinta dengan layanan kami!!"
                   </div>
-                  <button class="btn btn-lg btn-warning text-primary">Button Quote</button>
+                  <button class="btn btn-lg btn-warning text-primary">Quotes</button>
                 </div>
                 <div class="col-sm-4">
                   <img src="images/ari widiatmoko.png" alt="" class="img-fluid">
@@ -550,7 +555,7 @@
                   <div class="quote mb-5">
                     "Pengiriman bebas repot dengan kami, Biarkan kami menjalankan tugas Anda, Lebih cepat dari yang anda pikirkan!!"
                   </div>
-                  <button class="btn btn-lg btn-warning text-primary">Button Quote</button>
+                  <button class="btn btn-lg btn-warning text-primary">Quotes</button>
                 </div>
                 <div class="col-sm-4">
                   <img src="images/achmad.png" alt="" class="img-fluid">
@@ -578,7 +583,7 @@
           </nav>
         </div>
       </section>
-      <section class="row section-bg-custom justify-content-center py-5">
+      <section class="row section-bg-custom justify-content-center py-5" id="5 Tips from Our Site">
         <div class="col-sm-8" data-aos="zoom-in">
           <h1 class="mb-5 text-center">5 Langkah mudah pengiriman bersama Package Drive</h1>
           <div class="accordion" id="accordionExample">
@@ -656,7 +661,7 @@
       <div class="row justify-content-center my-5">
         <div class="col-sm-10">
           <div class="row">
-            <div class="col-sm-3 mb-5">
+            <div class="col-sm-3 mb-5" id="Contact & Social Media">
               <div class="mb-4 text-center">
                 <img src="images/Logo-Pesat 2.png" alt="Logo Pesat" width="40px" class="d-inline-block">PESAT
               </div>
